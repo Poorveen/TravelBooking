@@ -1,0 +1,77 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+
+	<listeners>
+		<listener class-name="Test.Listeners" />
+		<listener class-name="baseSetup.ExtentReporterNG" />
+	</listeners>
+	<test name="Verify that booking tab is accessible to admin">
+		<classes>
+			<class name="Test.Booking" />
+		</classes>
+	</test>
+	<test name="Verify that Quick book tab is accessible to admin">
+		<classes>
+			<class name="Test.QuickBook" />
+		</classes>
+	</test>
+	<test name="Verify that user book flight for oneway successfully">
+		<classes>
+			<class name="Test.OnewayFlightBooking" />
+		</classes>
+	</test>
+	<test name="Verify the user book a hotel room successfully">
+		<classes>
+			<class name="Test.HotelBookingNew" />
+		</classes>
+	</test>
+	<test name="Verify that CMSPages tab is accessible to admin">
+		<classes>
+			<class name="Test.CMSPages" />
+		</classes>
+	</test>
+	<test name="Verify that user Login to AdminPage successfully">
+		<classes>
+			<class name="Test.AdminLogin" />
+		</classes>
+	</test>
+	
+	<test name="Verify that Newsletter tab is accessible to admin">
+		<classes>
+			<class name="Test.NewsLetter" />
+		</classes>
+	</test>
+	<test name="Verify that BacupDB tab is accessible to admin">
+		<classes>
+			<class name="Test.BackupDB" />
+		</classes>
+	</test>
+	<test name="Verify that HomeLogin tab is accessible to admin">
+		<classes>
+			<class name="Test.HomeLogin" />
+		</classes>
+	</test>
+	<test name="Verify that dashboard tab is accessible to admin">
+		<classes>
+			<class name="Test.AdminDashboard"/>
+		</classes>
+	</test>
+	<test name="Verify that user book flight for round trip successfully">
+		<classes>
+			<class name="Test.RoundTripFlightBooking" />
+		</classes>
+	</test>
+	<test name="Verify the landing Page">
+		<classes>
+			<class name="Test.ApplicationLandingPage" />
+		</classes>
+	</test>
+	<test name="Verify that Blog tab is accessible to admin">
+		<classes>
+			<class name="Test.Blog" />
+		</classes>
+	</test>
+	
+
+	</suite>
